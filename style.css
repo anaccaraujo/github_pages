@@ -61,7 +61,6 @@ body {
   font-weight: 400;
   line-height: 1.65;
   overflow-x: hidden;
-  cursor: none;
 }
 
 a {
@@ -71,45 +70,6 @@ a {
 
 ul {
   list-style: none;
-}
-
-/* ═══════════════════════════════════════════════════════
-   CURSOR
-═══════════════════════════════════════════════════════ */
-#cursor-dot {
-  position: fixed;
-  z-index: 9999;
-  width: 8px;
-  height: 8px;
-  border-radius: 50%;
-  background: var(--indigo);
-  pointer-events: none;
-  transform: translate(-50%, -50%);
-  transition: width .2s, height .2s, background .2s;
-}
-
-#cursor-ring {
-  position: fixed;
-  z-index: 9998;
-  width: 32px;
-  height: 32px;
-  border-radius: 50%;
-  border: 1.5px solid rgba(91, 79, 207, .35);
-  pointer-events: none;
-  transform: translate(-50%, -50%);
-  transition: width .25s var(--ease), height .25s var(--ease), border-color .2s;
-}
-
-body.cursor-hover #cursor-dot {
-  width: 12px;
-  height: 12px;
-  background: var(--indigo-mid);
-}
-
-body.cursor-hover #cursor-ring {
-  width: 44px;
-  height: 44px;
-  border-color: rgba(91, 79, 207, .5);
 }
 
 /* ═══════════════════════════════════════════════════════
@@ -151,7 +111,6 @@ body.cursor-hover #cursor-ring {
   text-transform: uppercase;
   color: var(--text-3);
   transition: color var(--speed);
-  cursor: none;
 }
 
 .nav__links a:hover {
@@ -324,7 +283,7 @@ body.cursor-hover #cursor-ring {
   padding: .75rem 1.6rem;
   border-radius: var(--radius-sm);
   transition: transform var(--speed), box-shadow var(--speed), background var(--speed), color var(--speed);
-  cursor: none;
+  cursor: pointer;
 }
 
 .btn--primary {
@@ -370,7 +329,7 @@ body.cursor-hover #cursor-ring {
   display: inline-flex;
   align-items: center;
   gap: .4rem;
-  cursor: none;
+  cursor: pointer;
   transition: background var(--speed), transform .2s;
 }
 
@@ -392,7 +351,7 @@ body.cursor-hover #cursor-ring {
   display: inline-flex;
   align-items: center;
   gap: .4rem;
-  cursor: none;
+  cursor: pointer;
   transition: background var(--speed), color var(--speed), transform .2s;
 }
 
@@ -650,7 +609,7 @@ body.cursor-hover #cursor-ring {
   display: flex;
   flex-direction: column;
   transition: transform var(--speed) var(--ease), box-shadow var(--speed), border-color var(--speed);
-  cursor: none;
+  cursor: default;
 }
 
 .proj-card:hover {
@@ -847,7 +806,7 @@ body.cursor-hover #cursor-ring {
   text-decoration: none;
   color: var(--text-1);
   transition: transform var(--speed) var(--ease), box-shadow var(--speed), border-color var(--speed);
-  cursor: none;
+  cursor: pointer;
   box-shadow: var(--shadow-sm);
   position: relative;
   overflow: hidden;
